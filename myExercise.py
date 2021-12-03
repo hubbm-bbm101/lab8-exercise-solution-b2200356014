@@ -10,7 +10,6 @@ with open("students.txt", "r+") as file:
 
     names = sys.argv[1]
     names = names.split(",")
-    print(names)
     for name in names:
         try:
             print(f"{name},{dic[name][0]},{dic[name][1]}")
